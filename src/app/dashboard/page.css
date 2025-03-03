@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
+    padding: 1rem;
 }
 
 .user-page-header {
@@ -15,4 +16,80 @@
     padding: 1rem;
     background: var(--foreground);
     color: var(--copy);
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+
 }
+
+
+.user-tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.user-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    background: var(--foreground);
+    color: var(--copy);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.task-options {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 25px;
+    height: 25px;
+}
+
+.add-task-bar {
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-y: visible;
+
+}
+
+.add-task-button {
+    background: var(--foreground);
+    outline: 1px solid var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--border-radius);
+    width: 50px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.add-task-button:hover svg {
+    fill: var(--foreground)
+}
+
+.add-task-button svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary);
+}
+

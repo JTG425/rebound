@@ -5,13 +5,15 @@ import { useRouter } from 'next/navigation';
 // Use your client-side Supabase client utility (make sure it's set up for client-side)
 import { createClient } from '../../../utils/supabase/client';
 
+
+
 export default function LogoutButton() {
   const router = useRouter();
 
   const handleLogOut = async () => {
     const supabase = createClient();
     await supabase.auth.signOut();
-    router.push('/login');
+    router.push('/landing');
   };
 
   return (

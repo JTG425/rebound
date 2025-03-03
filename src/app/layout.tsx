@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Database } from '../supabase/supabase'
+import { supabase } from '../supabase/supabase'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
